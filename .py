@@ -14,3 +14,10 @@ def list_students():
             print(f"  {course}: {grade}")
         print()
 
+def add_student():
+    try:
+        student_id = int(input("Enter student ID: "))
+        name = input("Enter student's name: ")
+        age = int(input("Enter student's age: "))
+        email = input("Enter student's email address: ")
+        grades = {}
