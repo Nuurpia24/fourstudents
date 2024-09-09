@@ -21,3 +21,9 @@ def add_student():
         age = int(input("Enter student's age: "))
         email = input("Enter student's email address: ")
         grades = {}
+           while True:
+            course = input("Enter course name (or press Enter to finish): ")
+            if not course:
+                break
+            grade = int(input(f"Enter grade for {course}: "))
+            grades[course] = grade
