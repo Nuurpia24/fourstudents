@@ -27,3 +27,10 @@ def add_student():
                 break
             grade = int(input(f"Enter grade for {course}: "))
             grades[course] = grade
+        new_student = {
+                    "name": name,
+                    "email": email,
+                    "age": age,
+                    "student_id": student_id,
+                    "grades": grades
+                }
