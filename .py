@@ -5,3 +5,12 @@ students = [
     {"name": "Magdalena Andersson", "email": "magdalena.andersson@yh.nackademin.se", "age": 50, "student_id": 11234, "grades": {"Python Programming 1": 1, "Web Frameworks in Python": 5}}
 ]
 
+def list_students():
+    print("\nList of all students:")
+    for student in students:
+        print(f"ID: {student['student_id']}, Name: {student['name']}, Age: {student['age']}, Email: {student['email']}")
+        print("Grades:")
+        for course, grade in student['grades'].items():
+            print(f"  {course}: {grade}")
+        print()
+
