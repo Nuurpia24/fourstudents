@@ -48,4 +48,11 @@ def add_student():
                 return
         print(f"\nNo student found with ID {student_id}.")
     except ValueError:
-        print("Please enter a valid number for the student ID.")        
+        print("Please enter a valid number for the student ID.")  
+
+        def show_menu():
+    print("\nChoose an option:")
+    print("[q] Quit the program")
+    print("[0] List all students with details")
+    print("[1] Add a student")
+    print("[2] Remove a student")      
