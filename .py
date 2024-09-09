@@ -56,3 +56,25 @@ def add_student():
     print("[0] List all students with details")
     print("[1] Add a student")
     print("[2] Remove a student")      
+
+    def main():
+    print("Welcome to the student management system!")
+    
+    while True:
+        show_menu()
+        choice = input("Your choice: ").lower()
+        
+        if choice == 'q':
+            print("Program is exiting. Goodbye!")
+            break
+        elif choice == '0':
+            list_students()
+        elif choice == '1':
+            add_student()
+        elif choice == '2':
+            remove_student()
+        else:
+            print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
