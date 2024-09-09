@@ -33,4 +33,8 @@ def add_student():
                     "age": age,
                     "student_id": student_id,
                     "grades": grades
-                }
+                } 
+       students.append(new_student)
+        print(f"\nStudent {name} with ID {student_id} has been added.")
+    except ValueError:
+        print("Please enter a valid number for ID or age.")         
