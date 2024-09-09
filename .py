@@ -37,4 +37,15 @@ def add_student():
        students.append(new_student)
         print(f"\nStudent {name} with ID {student_id} has been added.")
     except ValueError:
-        print("Please enter a valid number for ID or age.")         
+        print("Please enter a valid number for ID or age.") 
+        def remove_student():
+    try:
+        student_id = int(input("Enter student ID of the student you want to remove: "))
+        for student in students:
+            if student['student_id'] == student_id:
+                students.remove(student)
+                print(f"\nStudent with ID {student_id} has been removed.")
+                return
+        print(f"\nNo student found with ID {student_id}.")
+    except ValueError:
+        print("Please enter a valid number for the student ID.")        
